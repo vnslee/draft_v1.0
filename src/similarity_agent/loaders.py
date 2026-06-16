@@ -16,9 +16,9 @@ import json
 import os
 from functools import lru_cache
 
-# mockup 폴더 위치 (이 파일 기준 ../mockup)
+# data 폴더 위치 (이 파일 기준 ../../data)
 _HERE = os.path.dirname(os.path.abspath(__file__))
-MOCKUP_DIR = os.path.normpath(os.path.join(_HERE, "..", "mockup"))
+MOCKUP_DIR = os.path.normpath(os.path.join(_HERE, "..", "..", "data"))
 
 # 비교 대상 데이터셋 → 파일 경로 + 국가 목록이 담긴 최상위 키
 DATASET_FILES = {
